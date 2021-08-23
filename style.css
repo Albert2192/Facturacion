@@ -16,12 +16,13 @@
     bottom: 10px;
     transition: .5s;
     cursor: pointer;
-    outline: none;
+    outline: none;    
 }
 
 .cero{
     z-index: 5;
     background: rgb(110, 3, 25);
+    box-shadow: 2px 2px 5px #000;
 }
 
 .cero:hover{
@@ -104,5 +105,33 @@
 
 .flotante i{
     color: #f1f1f1;
+}
+
+/* SIDEBAR */
+
+header{
+    width: 250px;
+    min-height: 100vh;
+    background: steelblue;
+}
+
+header .card{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: thistle;
+}
+
+.datos h3{
+    
+}
+
+.foto img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: none;
+    border-radius: 5px;
 }
 
