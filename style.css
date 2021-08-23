@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flotante{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    transition: .5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.cero{
+    z-index: 5;
+    background: rgb(110, 3, 25);
+}
+
+.cero:hover{
+    background: crimson;
+}
+
+.uno{
+    z-index: 4;
+    background: green;
+}
+
+.uno:hover{
+    background: rgb(6, 209, 6);
+}
+
+.dos{
+    z-index: 3;
+    background: rgb(45, 13, 228);
+}
+
+.dos:hover{
+    background: rgb(95, 71, 231);
+}
+
+.tres{
+    z-index: 2;
+    background: rgb(70, 6, 70);
+}
+
+.tres:hover{
+    background: rgb(219, 27, 219);
+}
+
+.uno.active{
+    animation: uno .3s ease .3s forwards;
+}
+
+.dos.active{
+    animation: dos .3s ease .3s forwards;
+}
+
+.tres.active{
+    animation: tres .3s ease .3s forwards;
+}
+
+@keyframes uno {
+    from{
+        bottom: 10px;
+    }
+    to{
+        bottom: 50px;
+    }
+}
+
+@keyframes dos {
+    from{
+        bottom: 10px;
+    }
+    to{
+        bottom: 90px;
+    }
+}
+
+@keyframes tres {
+    from{
+        bottom: 10px;
+    }
+    to{
+        bottom: 130px;
+    }
+}
+
+/* .flotante a{
+    font-size: 25px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    user-select: none;
+} */
+
+.flotante i{
+    color: #f1f1f1;
+}
+
